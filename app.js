@@ -91,4 +91,4 @@ app.post("/sessions", function(req, res){
 app.use("/app", session_middleware);
 app.use("/app", router_app);
 
-server.listen(8080);
+server.listen(process.env.PORT, '0.0.0.0');
